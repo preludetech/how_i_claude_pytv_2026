@@ -46,7 +46,7 @@
 	</div>
 
 	<div style="position: absolute; opacity:0.1; right: 7em; top: 2em">
-		<img src="/images/brand/Prelude - Leaf.svg" style="
+		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(2.5);
     	-ms-transform: scale(2.5);
     	-o-transform: scale(2.5);
@@ -55,7 +55,7 @@
 	</div>
 
 	<div style="position: absolute; opacity:0.1; left: 0em; bottom: 0em">
-		<img src="/images/brand/Prelude - Leaf.svg" style="
+		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(1.5);
     	-ms-transform: scale(1.5);
     	-o-transform: scale(1.5);
@@ -64,7 +64,7 @@
 	</div>
 
 	<div style="position: absolute; top:1em; left:1em">
-		<img src="/images/brand/Prelude - Logo.svg" width="250em" />
+		<img src="images/brand/Prelude - Logo.svg" width="250em" />
 	</div>
 
 	<div class="reveal">
@@ -87,26 +87,37 @@
 				<h2>AI Fatigue</h2>
 				<ul>
 					<li class="fragment">Deluge of new tools and techniques</li>
-					<li class="fragment">"Influencers" with epic results</li>
+					<li class="fragment">"Influencers" with epic results and fancy tools</li>
 					<li class="fragment">Feeling behind is normal</li>
-					<li class="fragment">When you try to get LLMs to help you, they underperform by default
-						<ul>
+					<li class="fragment">When you try to get LLMs to help you, they often underperform
+						<!-- <ul>
 							<li class="fragment">"Misunderstand" what you need</li>
 							<li class="fragment">Produce filthy code full of repitition</li>
 							<li class="fragment">Introduce weird bugs + security issues</li>
 							<li class="fragment">Suck at testing</li>
-						</ul>
+						</ul> -->
 					</li>
+					<!-- <li class="fragment">Also, they rock</li> -->
+					<li class="fragment">Not clear where to start</li>
 				</ul>
 			</section>
 
 			<section>
+				<h2>I'll share</h2>
+				<ul>
+					<li class="fragment">A structured way to build up LLM-code-gen capabilities</li>
+					<li class="fragment">The trajectory matters more than the final config</li>
+					<!-- <li class="fragment">Not the final word</li> -->
+				</ul>
+			</section>
+
+			<!-- <section>
 				<h2>LLMs rock</h2>
 				<ul>
 					<li class="fragment">Increase my agency</li>
 					<li class="fragment">Increase my speed</li>
 				</ul>
-			</section>
+			</section> -->
 
 			<section>
 				<h2>Hi, I'm Sheena</h2>
@@ -115,6 +126,7 @@
 				</span><br/><br/>
 				<ul>
 					<li class="fragment">Coding since young teen</li>
+					<li class="fragment">Mostly worked as a software engineer + lead</li>
 					<li class="fragment">
 						Spent the last 6 years in tech education
 
@@ -127,18 +139,44 @@
 					<li class="fragment">Founded Guild of Educators </li>
 					<li class="fragment">PyCon Africa 2025 Chair</li>
 					<li class="fragment">Python Software Foundation Director</li>
+				</ul>
+			</section>
+
+
+			<!-- <section></section> -->
+
+			<!-- <section>
+				<h2>Why out of the box setups don't just work</h2>
+				<ul>
+					<li class="fragment"></li>
+				</ul>
+			</section> -->
+
+			<!-- <section><h1>Trust</h1></section> -->
+
+			<section>
+				<h2>Can't we just use {plugin}?</h2>
+				<ul>
+					<li class="fragment">Prompts are already defined</li>
+					<li class="fragment">Agents, workflows, hooks... all the batteries!</li>
+					<li class="fragment">Lots of contributors</li>
+					<li class="fragment">Using the latest features</li>
 
 				</ul>
-				
 			</section>
 
 			<section>
+				<h2>Your workflow depends on</h2>
+				<h1>Your needs</h1>
+			</section>
+
+			<!-- <section>
 				<h2>In the before times...</h2>
 				<ul>
 					<li class="fragment">Code was intentionally hand-crafted</li>
 					<li class="fragment">We trusted our code because we wrote it</li>
 					<li class="fragment">Best practices + guardrails improve that trust</li>
-					<li class="fragment">Sometimes a little sloppy...</li>
+					<li class="fragment">Sometimes people were a little sloppy...</li>
 				</ul>
 			</section>
 
@@ -146,54 +184,235 @@
 				<h2>Working with LLMs</h2>
 				<ul>
 					<li class="fragment">Trust is not there by default</li>
-					<li class="fragment">Scaffolding improve quality => trust</li>
-					<li class="fragment">Guardrails improve trust</li>
 					<li class="fragment">Software engineering best practices are more important</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Trust Target</h2>
-
-				TODO: Spectrum 
-				- flappy bird  to nuclear power station 
-
-			</section>
-
-			<section>
-				<h2>The life of software</h2>
-				<ul>
-					<li class="fragment">LLMs are great at greenfield work</li>
-					<li class="fragment">Biggest costs: Maintaining and extending software</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Benefitting from LLM coding assistants</h2>
-				<ul>
-					<li class="fragment">Choose a tool</li>
-					<li class="fragment">Set up all your prompts/skills/agents/whatever</li>
-					<li class="fragment">It wont work the way you want it to</li>
-					<li class="fragment">Continual improvement</li>
-				</ul>
-			</section>
-
-			<!-- <section>
-				<h2>Your LLM-code-gen setup</h2>
-				<ul>
-					<li class="fragment"></li>
+					<li class="fragment">Code review is not enough (for so many reasons)</li>
 				</ul>
 			</section> -->
 
 			<section>
-				<h2>Pursuing diminishing returns</h2>
+				<h2>Does this sound like you?</h2>
+				<p>
+					"It's alright if a bug goes to production. We'll fix it when we see it... Maybe"
+				</p>
+			</section>
+			
+			<section>
+				<h2>How about this?</h2>
+				<p>
+					"OMG, people could die"
+				</p>
+			</section>
+
+			<section>
+				<h2>Not all projects require the same level of trust!</h2>
+				<!-- todo: draw spectrum -->
+			</section>
+
+			
+
+			<section>
+				<h2>The cost of software?</h2>
+				<ul>
+					<li class="fragment">Initial build 💸💸</li>
+					<li class="fragment">Lifetime 💸💸💸💸💸</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>The cost of software?</h2>
+				<ul>
+					<li>Initial build with LLM 💸</li>
+					<li>Lifetime 💸💸💸💸💸<span class="fragment">💸💸💸💸💸</span> </li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>But LLMs will get better...</h2>
+				<ul>
+					<li class="fragment">Messy code => messy context</li>
+					<li class="fragment">Unclear intentions => bad decisions</li>
+					<li class="fragment">Some projects just don't work if the code is 🍝</li>
+					<li class="fragment">That is your risk to take. Your responsibility</li>
+				</ul>
+			</section>
+
+
+			<section>
+				<h2>How to build LLM capabilities</h2>
+				<ol>
+					<li class="fragment">Get small things right (your kind of right)</li>
+					<li class="fragment">Get big things right</li>
+					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li>
+				</ol>
+			</section>
+			
+
+			<section>
+				<h2>The power of diminishing returns</h2>
 				<p class="fragment">
 					Small improvement in model capability on small task <br/><br/>=> Exponential improvement in multi-step tasks
 				</p>
 			</section>
 
+			<section>
+				<h2>It's problems all the way down</h2>
+				<img src="./images/problem_tree.drawio.svg" alt="">
+			</section>
 
+			<section>
+				<h2>Improving chances of success</h2>
+				<ul>
+					<li class="fragment">Use better models</li>
+					<li class="fragment">Scaffolding => more likely to be correct on first try</li>
+					<li class="fragment">Validation => More able to self-validate and correct</li>
+				</ul>
+				<!-- 14 minutes in -->
+			</section>
 
+			 <section>
+				<h2>Bringing it home</h2>
+				<ul>
+					<li class="fragment">Tell you about something we are working on @ Prelude</li>
+					<li class="fragment">Thinking about trust and maintainability</li>
+					<li class="fragment">How we use Claude (for now...)</li>
+				</ul>
+			</section> 
+
+			<section>
+				<h2>The world needs another LMS</h2>
+				<ul>
+					<li class="fragment">LMS = Learner Management System</li>
+					<li class="fragment">What if we treat the learners as first class citizens?</li>
+					<li class="fragment">Learner experience should depend on what you are trying to teach</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Freedom LS</h2>
+				<ul>
+					<li class="fragment">Django project</li>
+					<li class="fragment">Can be used as standalone LMS</li>
+					<li class="fragment">Architecture inspired by AllAuth</li>
+					<li class="fragment">Designed to be included in other Django projects</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Concrete implementations</h2>
+				<img src="images/freedom_ls_concrete.drawio.svg" height="450"/>
+			</section>
+
+			<section>
+				<h2>Quality targets</h2>
+				<ul>
+					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
+					<li class="fragment">Regulations and privacy concerns => highly secure</li>
+					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
+					<li class="fragment">Goal is to have a long-lived project => maintainability matters</li>
+				</ul>
+			</section>
+
+			<!-- <section>
+				<h2>Progressive setup</h2>
+				<ol>
+					<li class="fragment">Get the small things right</li>
+					<li class="fragment">Get big things right</li>
+					<li class="fragment">Get big things right faster</li>
+				</ol>
+			</section> -->
+
+			<section>
+				<h2>Get small things right</h2>
+				
+				<li class="fragment">Claude.md
+				<ul>
+						<ul>
+							<li class="fragment">claude init... please no</li>
+							<li class="fragment">When in doubt, leave it out. Only non-obvious stuff</li>
+							<li class="fragment">Heavy docs go in skills</li>
+							<li class="fragment">Insist on using skills. Tell it again and again</li>
+						</ul>
+					</li>
+					<li class="fragment">Skills and docs</li>
+					<li class="fragment">Work interactively</li>
+					<li class="fragment">Use /clear a LOT</li>
+					<li class="fragment">Learn about context pollution</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Get big things right</h2>
+				<ul>
+					<li class="fragment">The creator of Claude code swears by plan mode</li>
+					<li class="fragment">Personally: spec driven development</li>
+					<li class="fragment">Because specs live in the repo!</li>
+					<li class="fragment">Progressive refinement of requirements => find "assumptions"</li>
+					<li class="fragment">Find ways to get AI to check itself...</li>
+					<li class="fragment">Get inspired by superpowers, etc</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>My Spec DD</h2>
+				<ul>
+					<li class="fragment">Idea</li>
+					<li class="fragment">Maybe research</li>
+					<li class="fragment">Spec</li>
+					<li class="fragment">Plan</li>
+					<li class="fragment">QA plan => Screenshots!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>I hope your context is clear, Irishperson</h2>
+
+				<ul>
+					<li class="fragment">Clear between each step</li>
+					<li class="fragment">Use subagents for executing batches of tasks</li>
+					<li class="fragment">Request code review skill, launches an agent</li>
+				</ul>
+			</section>
+
+			<section>
+				<p>So far we spoke about building the thing right</p>
+				<h2>What about building the right thing?</h2>
+			</section>
+
+			<section>
+				<h2>Research mode is your friend</h2>
+
+				<h3>First, make a prompt</h3>
+				
+				<p>You are a prompt engineer...</p>
+
+				<p>I'm building an LMS. I need to implement deadlines. Research what everyone is doing, and what users like and dislike. Etc etc</p>
+					
+			</section>
+
+			<section>
+				<h3>Then...</h3>
+				<ul>
+					<li class="fragment">Read it and fix any weird assumptions</li>
+					<li class="fragment">Run it in research mode</li>
+				</ul>
+			</section>
+
+			
+
+			<section>
+				<h2>WIP</h2>
+				<ul>
+					<li class="fragment">Try Open Code</li>
+					<li class="fragment">Explore BDD - Gherkin</li>
+					<li class="fragment">Improve DX
+						<ul>
+							<li class="fragment">Remote execution</li>
+							<li class="fragment">Parallel QA is tricky</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			
 
 
 		</div>
