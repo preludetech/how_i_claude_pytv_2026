@@ -156,6 +156,7 @@
 
 			<section>
 				<h2>Can't we just use {plugin}?</h2>
+				<p>eg: superpowers, spec-kit, etc</p>
 				<ul>
 					<li class="fragment">Prompts are already defined</li>
 					<li class="fragment">Agents, workflows, hooks... all the batteries!</li>
@@ -166,8 +167,8 @@
 			</section>
 
 			<section>
-				<h2>Your workflow depends on</h2>
-				<h1>Your needs</h1>
+				<h2>Your code gen setup depends on</h2>
+				<h1 class="fragment">Your project's needs</h1>
 			</section>
 
 			<!-- <section>
@@ -205,6 +206,7 @@
 
 			<section>
 				<h2>Not all projects require the same level of trust!</h2>
+				<!-- <h2>Not all projects need the same guardrails</h2> -->
 				<!-- todo: draw spectrum -->
 			</section>
 
@@ -240,9 +242,10 @@
 			<section>
 				<h2>How to build LLM capabilities</h2>
 				<ol>
-					<li class="fragment">Get small things right (your kind of right)</li>
+					<li class="fragment">Figure out how much trust and maintainability you need</li>
+					<!-- <li class="fragment">Get small things right (your kind of right)</li>
 					<li class="fragment">Get big things right</li>
-					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li>
+					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li> -->
 				</ol>
 			</section>
 			
@@ -250,7 +253,7 @@
 			<section>
 				<h2>The power of diminishing returns</h2>
 				<p class="fragment">
-					Small improvement in model capability on small task <br/><br/>=> Exponential improvement in multi-step tasks
+					Small improvement chance of success on small task <br/><br/>=> Exponential improvement in multi-step tasks
 				</p>
 			</section>
 
@@ -260,7 +263,17 @@
 			</section>
 
 			<section>
-				<h2>Improving chances of success</h2>
+				<h2>How to build LLM capabilities</h2>
+				<ol>
+					<li>Figure out how much trust and maintainability you need</li>
+					<li class="fragment">Get small things right (your kind of right)</li>
+					<li class="fragment">Get big things right</li>
+					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li> 
+				</ol>
+			</section>
+
+			<section>
+				<h2>Getting small things right</h2>
 				<ul>
 					<li class="fragment">Use better models</li>
 					<li class="fragment">Scaffolding => more likely to be correct on first try</li>
@@ -268,6 +281,8 @@
 				</ul>
 				<!-- 14 minutes in -->
 			</section>
+
+			
 
 			 <section>
 				<h2>Bringing it home</h2>
@@ -306,8 +321,8 @@
 				<h2>Quality targets</h2>
 				<ul>
 					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
-					<li class="fragment">Regulations and privacy concerns => highly secure</li>
 					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
+					<li class="fragment">Regulations and privacy concerns => highly secure</li>
 					<li class="fragment">Goal is to have a long-lived project => maintainability matters</li>
 				</ul>
 			</section>
@@ -324,26 +339,73 @@
 			<section>
 				<h2>Get small things right</h2>
 				
-				<li class="fragment">Claude.md
-				<ul>
+				<h4>Claude.md and all the rest</h4>
+				
+
 						<ul>
 							<li class="fragment">claude init... please no</li>
 							<li class="fragment">When in doubt, leave it out. Only non-obvious stuff</li>
 							<li class="fragment">Heavy docs go in skills</li>
 							<li class="fragment">Insist on using skills. Tell it again and again</li>
 						</ul>
-					</li>
-					<li class="fragment">Skills and docs</li>
-					<li class="fragment">Work interactively</li>
-					<li class="fragment">Use /clear a LOT</li>
-					<li class="fragment">Learn about context pollution</li>
+					
 				</ul>
+			</section>
+
+
+			<section>
+				<h2>Get small things right</h2>
+				<h4>Perfectly normal guardrails</h4>
+
+				<ul>
+					<li class="fragment">Unit tests</li>
+					<li class="fragment">Linting</li>
+					<li class="fragment">Type checks</li>
+					<li class="fragment">Git!!!!</li>
+				</ul>
+
+			</section>
+
+
+			<section>
+				<h2>Get small things right</h2>
+				<h4>Work interactively</h4>
+
+				<ul>
+					<li class="fragment">Take the robot by the hand...</li>
+					<li class="fragment">Refine your md as you go</li>
+					<li class="fragment">Learn about context pollution</li>
+					<li class="fragment">Use /clear a LOT</li>
+				</ul>
+			</section>
+
+			<section data-auto-animate>
+				<h2>Get big things right</h2>
+				<ol>
+					<li class="fragment">Break the big thing into small things</li>
+					<li class="fragment">Get the small things right</li>
+				</ol>
+			</section>
+
+			<section data-auto-animate>
+				<h2>Get big things right</h2>
+				<ol>
+					<li>Figure out what the big thing is</li>
+					<li>Break the big thing into small things</li>
+					<li>Get the small things right</li>
+				</ol>
 			</section>
 
 			<section>
 				<h2>Get big things right</h2>
 				<ul>
-					<li class="fragment">The creator of Claude code swears by plan mode</li>
+					<li class="fragment">The creator of Claude code swears by plan mode
+						<ul>
+							<li class="fragment">Leave out details</li>
+							<li class="fragment">Hard to edit after the fact</li>
+							<li class="fragment">No hard record</li>
+						</ul>
+					</li>
 					<li class="fragment">Personally: spec driven development</li>
 					<li class="fragment">Because specs live in the repo!</li>
 					<li class="fragment">Progressive refinement of requirements => find "assumptions"</li>
@@ -354,51 +416,84 @@
 
 			<section>
 				<h2>My Spec DD</h2>
-				<ul>
-					<li class="fragment">Idea</li>
-					<li class="fragment">Maybe research</li>
-					<li class="fragment">Spec</li>
-					<li class="fragment">Plan</li>
-					<li class="fragment">QA plan => Screenshots!</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>I hope your context is clear, Irishperson</h2>
-
-				<ul>
-					<li class="fragment">Clear between each step</li>
-					<li class="fragment">Use subagents for executing batches of tasks</li>
-					<li class="fragment">Request code review skill, launches an agent</li>
-				</ul>
-			</section>
-
-			<section>
-				<p>So far we spoke about building the thing right</p>
-				<h2>What about building the right thing?</h2>
-			</section>
-
-			<section>
-				<h2>Research mode is your friend</h2>
-
-				<h3>First, make a prompt</h3>
 				
-				<p>You are a prompt engineer...</p>
-
-				<p>I'm building an LMS. I need to implement deadlines. Research what everyone is doing, and what users like and dislike. Etc etc</p>
-					
+				<ul>
+					<li class="fragment">Start with an idea.md file</li>
+					<li class="fragment">command: Maybe refine the idea</li>
+					<li class="fragment">command: Spec from idea
+						<ul>
+							<li class="fragment">Must ask questions</li>
+							<li class="fragment">Explain decisions made</li>
+							<li class="fragment">Success criteria</li>
+						</ul>
+					</li>
+					<li class="fragment">CAREFULLY read the spec and correct the weirdness</li>
+				</ul>
 			</section>
 
 			<section>
-				<h3>Then...</h3>
+				<h2>My Spec DD</h2>
+
 				<ul>
-					<li class="fragment">Read it and fix any weird assumptions</li>
-					<li class="fragment">Run it in research mode</li>
+					<li class="fragment">command: review spec</li>
+					<li class="fragment">command: plan from spec
+						<ul>
+							<li class="fragment">First pass: just plan (look at code, ask questions, output tasks)</li>
+							<li class="fragment">Second pass: For each task, mention necessary skills</li>
+							<li class="fragment">Make a frontend QA plan if there are frontend effects</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>My Spec DD</h2>
+				<ul>
+					<li class="fragment">Executing the plan
+						<ul>
+							<li class="fragment">Break tasks into batches</li>
+							<li class="fragment">Batches executed by subagents</li>
+							<li class="fragment">Run tests</li>
+							<li class="fragment">Separate agent for code review (after each batch)</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>My Spec DD</h2>
+				<ul>
+					<li class="fragment">Executing QA plan
+
+						<ul>
+							<li class="fragment">Act as a human QA expert</li>
+							<li class="fragment">Playwright MCP</li>
+							<li class="fragment">Execute whole plan on multiple screen sizes</li>
+							<li class="fragment">Use qa data-factory sub-agent to help set up data (eg big cohort)</li>
+							<li class="fragment">Save screenshots</li>
+							<li class="fragment">Make a report</li>
+						</ul>
+					</li>
+
+				</ul>
+			</section>
+
+
+			<section>
+				<h2>Tips</h2>
+
+				<ul>
+					<li class="fragment">/clear between each step</li>
+					<li class="fragment">Commit often</li>
+					<li class="fragment">Roll back if there wre big assumptions. The earlier you fix it the better</li>
+					<li class="fragment">Be aware of context! Sub-agents are helpful</li>
 				</ul>
 			</section>
 
 			
 
+			
+<!-- 
 			<section>
 				<h2>WIP</h2>
 				<ul>
@@ -411,7 +506,7 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
+			</section> -->
 			
 
 
