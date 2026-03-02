@@ -238,6 +238,56 @@
 				</ul>
 			</section>
 
+			<section>
+				<h2>Your stack matters!</h2>
+
+				<ul>
+					<li class="fragment">Different structures</li>
+					<li class="fragment">Different idioms</li>
+					<li class="fragment">Different best practices</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Case Study: Freedom LS</h2>
+				<ul>
+					<li class="fragment">LMS = Learner Management System</li>
+					<li class="fragment">What if we treat the learners and teachers as first class citizens?</li>
+					<li class="fragment">Learner experience should depend on what you are trying to teach</li>
+				</ul>
+				
+			</section> 
+
+		
+
+			<section>
+				<h2>What is it</h2>
+				<ul>
+					<li class="fragment">Django project</li>
+					<li class="fragment">Can be used as standalone LMS</li>
+					<li class="fragment">Designed to be included in other Django projects</li>
+					<li class="fragment">Hyper customizable</li>
+					<li class="fragment">Wagtail versus Wordpress</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Concrete implementations</h2>
+				<img src="images/freedom_ls_concrete.drawio.svg" height="450"/>
+			</section>
+
+			<section>
+				<h2>Quality targets</h2>
+				<ul>
+					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
+					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
+					<li class="fragment">Regulations and privacy concerns => highly secure</li>
+					<li class="fragment">Goal is to have a long-lived project => maintainability matters</li>
+				</ul>
+			</section>
+
+
+
 
 			<section>
 				<h2>How to build LLM capabilities</h2>
@@ -268,7 +318,7 @@
 					<li>Figure out how much trust and maintainability you need</li>
 					<li class="fragment">Get small things right (your kind of right)</li>
 					<li class="fragment">Get big things right</li>
-					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li> 
+					<li class="fragment">Get big things right <span style="font-style: italic;">efficiently</span></li> 
 				</ol>
 			</section>
 
@@ -277,55 +327,14 @@
 				<ul>
 					<li class="fragment">Use better models</li>
 					<li class="fragment">Scaffolding => more likely to be correct on first try</li>
-					<li class="fragment">Validation => More able to self-validate and correct</li>
+					<li class="fragment">Validation => More able to self-correct</li>
 				</ul>
 				<!-- 14 minutes in -->
 			</section>
 
 			
 
-			 <section>
-				<h2>Bringing it home</h2>
-				<ul>
-					<li class="fragment">Tell you about something we are working on @ Prelude</li>
-					<li class="fragment">Thinking about trust and maintainability</li>
-					<li class="fragment">How we use Claude (for now...)</li>
-				</ul>
-			</section> 
-
-			<section>
-				<h2>The world needs another LMS</h2>
-				<ul>
-					<li class="fragment">LMS = Learner Management System</li>
-					<li class="fragment">What if we treat the learners as first class citizens?</li>
-					<li class="fragment">Learner experience should depend on what you are trying to teach</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Freedom LS</h2>
-				<ul>
-					<li class="fragment">Django project</li>
-					<li class="fragment">Can be used as standalone LMS</li>
-					<li class="fragment">Architecture inspired by AllAuth</li>
-					<li class="fragment">Designed to be included in other Django projects</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Concrete implementations</h2>
-				<img src="images/freedom_ls_concrete.drawio.svg" height="450"/>
-			</section>
-
-			<section>
-				<h2>Quality targets</h2>
-				<ul>
-					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
-					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
-					<li class="fragment">Regulations and privacy concerns => highly secure</li>
-					<li class="fragment">Goal is to have a long-lived project => maintainability matters</li>
-				</ul>
-			</section>
+			 
 
 			<!-- <section>
 				<h2>Progressive setup</h2>
@@ -335,23 +344,6 @@
 					<li class="fragment">Get big things right faster</li>
 				</ol>
 			</section> -->
-
-			<section>
-				<h2>Get small things right</h2>
-				
-				<h4>Claude.md and all the rest</h4>
-				
-
-						<ul>
-							<li class="fragment">claude init... please no</li>
-							<li class="fragment">When in doubt, leave it out. Only non-obvious stuff</li>
-							<li class="fragment">Heavy docs go in skills</li>
-							<li class="fragment">Insist on using skills. Tell it again and again</li>
-						</ul>
-					
-				</ul>
-			</section>
-
 
 			<section>
 				<h2>Get small things right</h2>
@@ -366,6 +358,24 @@
 
 			</section>
 
+			<section>
+				<h2>Get small things right</h2>
+				
+				<h4>Claude.md, Agents.md, etc.md</h4>
+				
+
+				<ul>
+					<li class="fragment">claude init <span class="fragment">❌ Don't do it! ❌</span></li>
+					<li class="fragment">When in doubt, leave it out. Only non-obvious stuff</li>
+					<li class="fragment">Heavy docs go in skills</li>
+					<li class="fragment">Insist on using skills. Tell it again and again</li>
+				</ul>
+					
+			</section>
+
+
+			
+
 
 			<section>
 				<h2>Get small things right</h2>
@@ -376,6 +386,8 @@
 					<li class="fragment">Refine your md as you go</li>
 					<li class="fragment">Learn about context pollution</li>
 					<li class="fragment">Use /clear a LOT</li>
+					<li class="fragment">Be explicit about what skills to use</li>
+					<li class="fragment">Make little helper commands</li>
 				</ul>
 			</section>
 
@@ -398,6 +410,7 @@
 
 			<section>
 				<h2>Get big things right</h2>
+				<h3>Make a plan</h3>
 				<ul>
 					<li class="fragment">The creator of Claude code swears by plan mode
 						<ul>
@@ -406,78 +419,116 @@
 							<li class="fragment">No hard record</li>
 						</ul>
 					</li>
-					<li class="fragment">Personally: spec driven development</li>
-					<li class="fragment">Because specs live in the repo!</li>
-					<li class="fragment">Progressive refinement of requirements => find "assumptions"</li>
-					<li class="fragment">Find ways to get AI to check itself...</li>
-					<li class="fragment">Get inspired by superpowers, etc</li>
+					<li class="fragment">Personally: spec driven development
+						<ul>
+							<li class="fragment">Progressive refinement of requirements => find "assumptions"</li>
+							<li class="fragment">Codify a workflow</li>
+							<li class="fragment">Get inspired by superpowers, etc</li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>My Spec DD</h2>
-				
+				<img src="images/spec-dd.drawio.svg" alt="">
+			</section>
+
+
+			<section>
+				<h2>My Spec DD</h2>
+				<h4>Idea.md</h4>
+
 				<ul>
-					<li class="fragment">Start with an idea.md file</li>
-					<li class="fragment">command: Maybe refine the idea</li>
-					<li class="fragment">command: Spec from idea
+					<li class="fragment">Created by a human</li>
+					<li class="fragment">Loose, high level</li>
+					<li class="fragment"><code>/improve_idea</code> (optional)</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>My Spec DD</h2>
+				<h4>Spec.md</h4>
+				<ul>
+					<li class="fragment"><code>/spec_from_idea</code>
 						<ul>
 							<li class="fragment">Must ask questions</li>
 							<li class="fragment">Explain decisions made</li>
 							<li class="fragment">Success criteria</li>
 						</ul>
 					</li>
-					<li class="fragment">CAREFULLY read the spec and correct the weirdness</li>
+
+					<li class="fragment">Format: Nothing fancy</li>
+					<li class="fragment">Read it and make sure I'm happy</li>
+					<li class="fragment"><code>/spec_review</code></li>
+
 				</ul>
+
 			</section>
 
 			<section>
 				<h2>My Spec DD</h2>
-
+				<h4>Plan.md & Frontend_QA.md</h4>
 				<ul>
-					<li class="fragment">command: review spec</li>
-					<li class="fragment">command: plan from spec
+					<li class="fragment"><code>/plan_from_spec</code>
 						<ul>
 							<li class="fragment">First pass: just plan (look at code, ask questions, output tasks)</li>
 							<li class="fragment">Second pass: For each task, mention necessary skills</li>
 							<li class="fragment">Make a frontend QA plan if there are frontend effects</li>
 						</ul>
 					</li>
+					<li class="fragment">Brief Review</li>
 				</ul>
+
 			</section>
 
 			<section>
 				<h2>My Spec DD</h2>
+				<h4>Writing the code</h4>
+
 				<ul>
-					<li class="fragment">Executing the plan
+					<li class="fragment">
+						<code>/implement_plan</code>
 						<ul>
 							<li class="fragment">Break tasks into batches</li>
 							<li class="fragment">Batches executed by subagents</li>
 							<li class="fragment">Run tests</li>
-							<li class="fragment">Separate agent for code review (after each batch)</li>
+							<li class="fragment">Separate agent for code review</li>
 						</ul>
 					</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>My Spec DD</h2>
+				<h4>QA report.md (with pictures)</h4>
+				<ul>
+					<li class="fragment"><code>/do_qa</code>
+					<ul>
+						<li class="fragment">Playwright MCP</li>
+						<li class="fragment">Executed on multiple screen sizes</li>
+						<li class="fragment">Takes screenshots</li>
+						<li class="fragment">Relies on helper agent for data setup</li>
+						<li class="fragment">Generates a report</li>
+					</ul>
+					</li>
+					
 				</ul>
 			</section>
 
 			<section>
 				<h2>My Spec DD</h2>
+				<h4>Pull Request</h4>
 				<ul>
-					<li class="fragment">Executing QA plan
-
-						<ul>
-							<li class="fragment">Act as a human QA expert</li>
-							<li class="fragment">Playwright MCP</li>
-							<li class="fragment">Execute whole plan on multiple screen sizes</li>
-							<li class="fragment">Use qa data-factory sub-agent to help set up data (eg big cohort)</li>
-							<li class="fragment">Save screenshots</li>
-							<li class="fragment">Make a report</li>
-						</ul>
-					</li>
-
+					<li class="fragment">Final Review on Github</li>
+					<li class="fragment">Easy to see changes + track what I've seen</li>
+					<li class="fragment">Make quick fixes</li>
+					<li class="fragment">Any major problems => I messed up a few steps back</li>
 				</ul>
-			</section>
 
+			</section>
 
 			<section>
 				<h2>Tips</h2>
