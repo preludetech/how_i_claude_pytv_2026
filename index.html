@@ -221,18 +221,13 @@
 				</ul>
 			</section>
 
-			<section data-background="images/flappy.png" data-background-opacity="0.3" data-state="hide-leaves" >
+			<section data-background="images/trust-spectrum.png" data-background-opacity="0.3" data-state="hide-leaves" >
 				<h2>Trust</h2>
-				<p>
-					"It's alright if a bug goes to production. We'll fix it when we see it"
-				</p>
-			</section>
-			
-			<section data-background="images/power-station.png" data-background-opacity="0.3" data-state="hide-leaves" >
-				<h2>Trust</h2>
-				<p>
-					"OMG, people could die"
-				</p>
+
+				<!-- <p>"It's alright if a bug goes to production. We'll fix it when we see it" 
+				
+				</p> -->
+				
 			</section>
 
 			<!-- <section> -->
@@ -272,9 +267,11 @@
 			
 
 			<section>
-				<h2>Case Study: Freedom LS</h2>
+				<h2>Case Study: Freedom LS (FLS)</h2>
 				<ul>
 					<li class="fragment">LMS = Learner Management System</li>
+					<li class="fragment">Clever textbook + plugins</li>
+					<li class="fragment">Core function = Learner <span style="font-weight: bold;">Management</span></li>
 					<li class="fragment">What if we treat the learners and teachers as first class citizens?</li>
 					<li class="fragment">Learner experience should depend on what you are trying to teach</li>
 				</ul>
@@ -284,14 +281,18 @@
 		
 
 			<section>
-				<h2>What is it</h2>
+				<h2>What is FLS</h2>
 				<ul>
 					<li class="fragment">Django project</li>
 					<li class="fragment">Can be used as standalone LMS</li>
 					<li class="fragment">Designed to be included in other Django projects</li>
 					<li class="fragment">Hyper customizable</li>
-					<li class="fragment">Wagtail versus Wordpress</li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Wagtail vs Wordpress</h2>
+				
 			</section>
 
 			<section>
@@ -320,7 +321,7 @@
 					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
 					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
 					<li class="fragment">Regulations and privacy concerns => highly secure</li>
-					<li class="fragment">Goal is to have a long-lived project => maintainability matters</li>
+					<!-- <li class="fragment">Goal is to have a long-lived project => maintainability matters</li> -->
 				</ul>
 			</section>
 
@@ -363,8 +364,8 @@
 
 				<ul>
 					<li class="fragment">Tests (unit, integration, etc)</li>
-					<li class="fragment">Linting</li>
-					<li class="fragment">Type checks</li>
+					<!-- <li class="fragment">Linting</li> -->
+					<li class="fragment">Static analysis</li>
 					<li class="fragment">Monitoring</li>
 				</ul>
 
@@ -379,8 +380,8 @@
 				<ul>
 					<li class="fragment">claude init <span class="fragment">❌ Don't do it! ❌</span></li>
 					<li class="fragment">When in doubt, leave it out. Only non-obvious stuff</li>
-					<li class="fragment">Heavy docs go in skills</li>
-					<li class="fragment">Insist on using skills. Tell it again and again</li>
+					<li class="fragment">Loose coupling</li>
+					<li class="fragment">Use skills</li>
 				</ul>
 					
 			</section>
@@ -396,8 +397,8 @@
 				<ul>
 					<li class="fragment">Take the robot by the hand...</li>
 					<li class="fragment">Refine your md as you go</li>
-					<li class="fragment">Learn about context pollution</li>
 					<li class="fragment">Use /clear a LOT</li>
+					<li class="fragment">Learn about context pollution</li>
 					<li class="fragment">Polish polish polish</li>
 				</ul>
 
@@ -407,7 +408,7 @@
 			<section>
 				<h2>Chasing diminishing returns</h2>
 				<p class="fragment">
-					Small improvement chance of success on small task <br/><br/>=> Exponential improvement in multi-step tasks
+					Small improvement chance of success on small task <br/><br/>=><br><br> Exponential improvement in multi-step tasks
 				</p>
 			</section>
 <!-- 
@@ -521,10 +522,7 @@
 
 			</section>
 
-			<section class="top-aligned" data-background="images/chaotic.png">
-				<h2>Fix problems early!</h2>
-				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
-			</section>
+			
 
 
 			<section>
@@ -574,7 +572,12 @@
 
 			</section>
 
-			<section class="top-aligned" data-background="images/chaotic.png">
+			<section class="top-aligned" data-background="images/chaotic.png" data-auto-animate="">
+				<h2>Fix problems early!</h2>
+				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
+			</section>
+
+			<section class="top-aligned" data-background="images/chaotic.png" data-auto-animate="">
 				<h2>Clean code still matters</h2>
 				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
 			</section>
@@ -611,9 +614,9 @@
 				<h2>Choose your own adventure</h2>
 				<ul>
 					<li class="fragment">Be structured</li>
-					<li class="fragment">Mind your context</li>
-					<!-- <li class="fragment">Chase diminishing returns</li> -->
-					<li class="fragment">Do what makes sense for your project ❄️</li>
+					<!-- <li class="fragment">Mind your context</li> -->
+					<li class="fragment">Chase diminishing returns</li>
+					<li class="fragment">❄️ Do what makes sense for your project ❄️</li>
 				</ul>
 			</section>
 
