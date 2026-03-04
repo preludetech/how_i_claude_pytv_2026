@@ -1,10 +1,7 @@
 timing = """
-intro 2:30
-me 1:20
-plugins-trust] 2:00
-cost-stack] 3:30
-llm implementation-small) 2:00
-small things 7:00
+intro-me]
+cant we
+
 """
 
 

@@ -9,8 +9,8 @@ chance_of_success = [
     0.5, 0.55, 0.55*1.1
 ]
 
-task_count = 100
-runs = 200
+task_count = 10
+runs = 1
 
 console.print(f"\n[bold]Number of tasks: {task_count}, averaged over {runs} runs[/bold]\n")
 for chance in chance_of_success:
