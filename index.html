@@ -35,6 +35,19 @@
 			font-family: "Exo 2", sans-serif !important;
 
 		}
+		.top-aligned {
+			top: 0 !important;
+		}
+
+		/* Leaf decoration visibility control */
+		.leaf-decoration {
+			transition: opacity 0.3s ease;
+		}
+
+		.hide-leaves .leaf-decoration {
+			opacity: 0 !important;
+			pointer-events: none;
+		}
 	</style>
 
 </head>
@@ -45,7 +58,7 @@
 		prelude.tech | @sheena@fosstodon.org | https://sheenaoc.com | x: @sheena_oconnell
 	</div>
 
-	<div style="position: absolute; opacity:0.1; right: 7em; top: 2em">
+	<div class="leaf-decoration" style="position: absolute; opacity:0.1; right: 7em; top: 2em">
 		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(2.5);
     	-ms-transform: scale(2.5);
@@ -54,7 +67,7 @@
     	transform: scale(2.5);" />
 	</div>
 
-	<div style="position: absolute; opacity:0.1; left: 0em; bottom: 0em">
+	<div class="leaf-decoration" style="position: absolute; opacity:0.1; left: 0em; bottom: 0em">
 		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(1.5);
     	-ms-transform: scale(1.5);
@@ -70,36 +83,17 @@
 	<div class="reveal">
 		<div class="slides">
 			<section data-auto-animate>
-				<h1>Powering up Django development with Claude Code</h1>
+				<h1 data-id="h1">Powering up Django development with Claude Code</h1>
 			</section>
-
+<!-- 
 			<section data-auto-animate>
 				<h1>Powering up Django development with <s>Claude Code</s></h1>
 			    <h1>LLMs</h1>				
-			</section>
+			</section> -->
 
 			<section data-auto-animate>
-				<h1>Powering up <s>Django</s> software development with <s>Claude Code</s></h1>
+				<h1 data-id="h1">Powering up <s>Django</s> software development with <s>Claude Code</s></h1>
 			    <h1>LLMs</h1>				
-			</section>
-
-			<section>
-				<h2>AI Fatigue</h2>
-				<ul>
-					<li class="fragment">Deluge of new tools and techniques</li>
-					<li class="fragment">"Influencers" with epic results and fancy tools</li>
-					<li class="fragment">Feeling behind is normal</li>
-					<li class="fragment">When you try to get LLMs to help you, they often underperform
-						<!-- <ul>
-							<li class="fragment">"Misunderstand" what you need</li>
-							<li class="fragment">Produce filthy code full of repitition</li>
-							<li class="fragment">Introduce weird bugs + security issues</li>
-							<li class="fragment">Suck at testing</li>
-						</ul> -->
-					</li>
-					<!-- <li class="fragment">Also, they rock</li> -->
-					<li class="fragment">Not clear where to start</li>
-				</ul>
 			</section>
 
 			<section>
@@ -111,6 +105,31 @@
 				</ul>
 			</section>
 
+			<section>
+				<h2>AI Fatigue</h2>
+				<ul>
+					<li class="fragment">Deluge of new tools and techniques</li>
+					<li class="fragment">"Influencers" with epic results and fancy tools</li>
+					<li class="fragment">Feeling behind is normal</li>
+					<li class="fragment">But they often underperform
+						<!-- <ul>
+							<li class="fragment">"Misunderstand" what you need</li>
+							<li class="fragment">Produce filthy code full of repitition</li>
+							<li class="fragment">Introduce weird bugs + security issues</li>
+							<li class="fragment">Suck at testing</li>
+						</ul> -->
+					</li>
+					<!-- <li class="fragment">Also, they rock</li> -->
+					<li class="fragment">A structured approach would be helpful</li>
+				</ul>
+			</section>
+
+
+			
+
+
+			
+			
 			<!-- <section>
 				<h2>LLMs rock</h2>
 				<ul>
@@ -155,20 +174,21 @@
 			<!-- <section><h1>Trust</h1></section> -->
 
 			<section>
-				<h2>Can't we just use {plugin}?</h2>
+				<h2>Can't we just download the config?</h2>
 				<p>eg: superpowers, spec-kit, etc</p>
 				<ul>
 					<li class="fragment">Prompts are already defined</li>
+					<li class="fragment">Using the latest features</li>
 					<li class="fragment">Agents, workflows, hooks... all the batteries!</li>
 					<li class="fragment">Lots of contributors</li>
-					<li class="fragment">Using the latest features</li>
 
 				</ul>
 			</section>
 
 			<section>
 				<h2>Your code gen setup depends on</h2>
-				<h1 class="fragment">Your project's needs</h1>
+				<h1 class="fragment">Your project's needs <br/> ❄️</h1>
+				
 			</section>
 
 			<!-- <section>
@@ -191,40 +211,51 @@
 			</section> -->
 
 			<section>
-				<h2>Does this sound like you?</h2>
+				<h2>Your architecture and norms matter!</h2>
+
+				<ul>
+					<li class="fragment">Your stack</li>
+					<li class="fragment">Your structures</li>
+					<li class="fragment">Your idioms</li>
+					<li class="fragment">Your best practices</li>
+				</ul>
+			</section>
+
+			<section data-background="images/flappy.png" data-background-opacity="0.3" data-state="hide-leaves" >
+				<h2>Trust</h2>
 				<p>
-					"It's alright if a bug goes to production. We'll fix it when we see it... Maybe"
+					"It's alright if a bug goes to production. We'll fix it when we see it"
 				</p>
 			</section>
 			
-			<section>
-				<h2>How about this?</h2>
+			<section data-background="images/power-station.png" data-background-opacity="0.3" data-state="hide-leaves" >
+				<h2>Trust</h2>
 				<p>
 					"OMG, people could die"
 				</p>
 			</section>
 
-			<section>
-				<h2>Not all projects require the same level of trust!</h2>
+			<!-- <section> -->
+				<!-- <h2>Not all projects require the same level of trust!</h2> -->
 				<!-- <h2>Not all projects need the same guardrails</h2> -->
 				<!-- todo: draw spectrum -->
-			</section>
+			<!-- </section> -->
 
 			
 
-			<section>
-				<h2>The cost of software?</h2>
+			<section data-auto-animate>
+				<h2>Lifetime cost</h2>
 				<ul>
-					<li class="fragment">Initial build 💸💸</li>
-					<li class="fragment">Lifetime 💸💸💸💸💸</li>
+					<li class="fragment" data-id="a">Greenfield 💸💸</li>
+					<li class="fragment" data-id="b">Brownfield 💸💸💸💸💸</li>
 				</ul>
 			</section>
 
-			<section>
-				<h2>The cost of software?</h2>
+			<section data-auto-animate>
+				<h2>Lifetime cost</h2>
 				<ul>
-					<li>Initial build with LLM 💸</li>
-					<li>Lifetime 💸💸💸💸💸<span class="fragment">💸💸💸💸💸</span> </li>
+					<li data-id="a">Greenfield with LLM 💸</li>
+					<li data-id="b">Brownfield 💸💸💸💸💸<span class="fragment">💸💸💸💸💸</span> </li>
 				</ul>
 			</section>
 
@@ -238,15 +269,7 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2>Your stack matters!</h2>
-
-				<ul>
-					<li class="fragment">Different structures</li>
-					<li class="fragment">Different idioms</li>
-					<li class="fragment">Different best practices</li>
-				</ul>
-			</section>
+			
 
 			<section>
 				<h2>Case Study: Freedom LS</h2>
@@ -276,6 +299,21 @@
 				<img src="images/freedom_ls_concrete.drawio.svg" height="450"/>
 			</section>
 
+			
+
+
+
+
+			<section>
+				<h2 style="font-size: 1.4em;">Recipe for ramping up code gen</h2>
+				<ol>
+					<li class="fragment">Figure out how much trust and maintainability you need</li>
+					<li class="fragment">Get small things right (your kind of right)</li>
+					<li class="fragment">Get big things right</li>
+					<li class="fragment">Get big things right <span style="font-style: italic;">efficiently</span></li> 
+				</ol>
+			</section>
+
 			<section>
 				<h2>Quality targets</h2>
 				<ul>
@@ -286,42 +324,16 @@
 				</ul>
 			</section>
 
-
-
-
 			<section>
-				<h2>How to build LLM capabilities</h2>
+				<h2 style="font-size: 1.4em;">Recipe for ramping up code gen</h2>
 				<ol>
-					<li class="fragment">Figure out how much trust and maintainability you need</li>
-					<!-- <li class="fragment">Get small things right (your kind of right)</li>
-					<li class="fragment">Get big things right</li>
-					<li class="fragment">Get big things right <span style="font-style: italic;">quickly</span></li> -->
+					<li>Figure out how much trust and maintainability you need ✅</li>
+					<li>Get small things right (your kind of right)</li>
+					<li>Get big things right</li>
+					<li>Get big things right <span style="font-style: italic;">efficiently</span></li> 
 				</ol>
 			</section>
 			
-
-			<section>
-				<h2>The power of diminishing returns</h2>
-				<p class="fragment">
-					Small improvement chance of success on small task <br/><br/>=> Exponential improvement in multi-step tasks
-				</p>
-			</section>
-
-			<section>
-				<h2>It's problems all the way down</h2>
-				<img src="./images/problem_tree.drawio.svg" alt="">
-			</section>
-
-			<section>
-				<h2>How to build LLM capabilities</h2>
-				<ol>
-					<li>Figure out how much trust and maintainability you need</li>
-					<li class="fragment">Get small things right (your kind of right)</li>
-					<li class="fragment">Get big things right</li>
-					<li class="fragment">Get big things right <span style="font-style: italic;">efficiently</span></li> 
-				</ol>
-			</section>
-
 			<section>
 				<h2>Getting small things right</h2>
 				<ul>
@@ -350,10 +362,10 @@
 				<h4>Perfectly normal guardrails</h4>
 
 				<ul>
-					<li class="fragment">Unit tests</li>
+					<li class="fragment">Tests (unit, integration, etc)</li>
 					<li class="fragment">Linting</li>
 					<li class="fragment">Type checks</li>
-					<li class="fragment">Git!!!!</li>
+					<li class="fragment">Monitoring</li>
 				</ul>
 
 			</section>
@@ -386,10 +398,35 @@
 					<li class="fragment">Refine your md as you go</li>
 					<li class="fragment">Learn about context pollution</li>
 					<li class="fragment">Use /clear a LOT</li>
-					<li class="fragment">Be explicit about what skills to use</li>
-					<li class="fragment">Make little helper commands</li>
+					<li class="fragment">Polish polish polish</li>
 				</ul>
+
 			</section>
+
+
+			<section>
+				<h2>Chasing diminishing returns</h2>
+				<p class="fragment">
+					Small improvement chance of success on small task <br/><br/>=> Exponential improvement in multi-step tasks
+				</p>
+			</section>
+<!-- 
+			<section>
+				<h2>It's problems all the way down</h2>
+				<img src="./images/problem_tree.drawio.svg" alt="">
+			</section> -->
+
+			<section>
+				<h2 style="font-size: 1.4em;">Recipe for ramping up code gen</h2>
+				<ol>
+					<li>Figure out how much trust and maintainability you need ✅</li>
+					<li>Get small things right (your kind of right) ✅</li>
+					<li>Get big things right</li>
+					<li>Get big things right <span style="font-style: italic;">efficiently</span></li> 
+				</ol>
+			</section>
+
+
 
 			<section data-auto-animate>
 				<h2>Get big things right</h2>
@@ -406,11 +443,12 @@
 					<li>Break the big thing into small things</li>
 					<li>Get the small things right</li>
 				</ol>
+
 			</section>
 
 			<section>
 				<h2>Get big things right</h2>
-				<h3>Make a plan</h3>
+				<h3>big thing -> small things</h3>
 				<ul>
 					<li class="fragment">The creator of Claude code swears by plan mode
 						<ul>
@@ -423,20 +461,20 @@
 						<ul>
 							<li class="fragment">Progressive refinement of requirements => find "assumptions"</li>
 							<li class="fragment">Codify a workflow</li>
-							<li class="fragment">Get inspired by superpowers, etc</li>
+							<!-- <li class="fragment">Get inspired by superpowers, etc</li> -->
 						</ul>
 					</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>My Spec DD</h2>
-				<img src="images/spec-dd.drawio.svg" alt="">
+				<h2>FLS Spec DD</h2>
+				<img src="images/spec-dd.drawio.svg" alt="" >
 			</section>
 
 
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>Idea.md</h4>
 
 				<ul>
@@ -448,14 +486,14 @@
 			</section>
 
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>Spec.md</h4>
 				<ul>
 					<li class="fragment"><code>/spec_from_idea</code>
 						<ul>
-							<li class="fragment">Must ask questions</li>
-							<li class="fragment">Explain decisions made</li>
-							<li class="fragment">Success criteria</li>
+							<li class="fragment">Maybe ask questions</li>
+							<li class="fragment">Must explain decisions made</li>
+							<li class="fragment">Must include success criteria</li>
 						</ul>
 					</li>
 
@@ -468,7 +506,7 @@
 			</section>
 
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>Plan.md & Frontend_QA.md</h4>
 				<ul>
 					<li class="fragment"><code>/plan_from_spec</code>
@@ -483,8 +521,14 @@
 
 			</section>
 
+			<section class="top-aligned" data-background="images/chaotic.png">
+				<h2>Fix problems early!</h2>
+				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
+			</section>
+
+
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>Writing the code</h4>
 
 				<ul>
@@ -502,7 +546,7 @@
 			</section>
 
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>QA report.md (with pictures)</h4>
 				<ul>
 					<li class="fragment"><code>/do_qa</code>
@@ -510,7 +554,7 @@
 						<li class="fragment">Playwright MCP</li>
 						<li class="fragment">Executed on multiple screen sizes</li>
 						<li class="fragment">Takes screenshots</li>
-						<li class="fragment">Relies on helper agent for data setup</li>
+						<!-- <li class="fragment">Relies on helper agent for data setup (factory_boy)</li> -->
 						<li class="fragment">Generates a report</li>
 					</ul>
 					</li>
@@ -519,7 +563,7 @@
 			</section>
 
 			<section>
-				<h2>My Spec DD</h2>
+				<h2>FLS Spec DD</h2>
 				<h4>Pull Request</h4>
 				<ul>
 					<li class="fragment">Final Review on Github</li>
@@ -530,18 +574,52 @@
 
 			</section>
 
+			<section class="top-aligned" data-background="images/chaotic.png">
+				<h2>Clean code still matters</h2>
+				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
+			</section>
+
 			<section>
-				<h2>Tips</h2>
+				<h2>Pay attention...</h2>
 
 				<ul>
-					<li class="fragment">/clear between each step</li>
-					<li class="fragment">Commit often</li>
-					<li class="fragment">Roll back if there wre big assumptions. The earlier you fix it the better</li>
-					<li class="fragment">Be aware of context! Sub-agents are helpful</li>
+					<li class="fragment">Mind your context</li>
+					<li class="fragment">Find bugs early</li>
+					<li class="fragment">Keep your head in the game</li>
+					<!-- <li class="fragment">This doesn't replace interactive workflows</li>
+					<li class="fragment">I still write a lot of code myself</li> -->
 				</ul>
 			</section>
 
-			
+			<section>
+				<h2>When all you have is a hammer</h2>
+				<ul>
+					<li class="fragment">Spec DD is often insufficient</li>
+					<li class="fragment">Weird stuff: Fall back to interactive mode</li>
+					<li class="fragment">Really weird stuff: Fall back to manual mode</li>
+				</ul>
+			</section>
+
+			<section data-auto-animate>
+				
+				<h2>Copy my approach</h2>
+			</section>
+
+			<section data-auto-animate>
+				
+				<h2><s>Copy my approach</s></h2>
+				<h2>Choose your own adventure</h2>
+				<ul>
+					<li class="fragment">Be structured</li>
+					<li class="fragment">Mind your context</li>
+					<!-- <li class="fragment">Chase diminishing returns</li> -->
+					<li class="fragment">Do what makes sense for your project ❄️</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Thank you</h2>
+			</section>
 
 			
 <!-- 

@@ -6,7 +6,7 @@ from rich.table import Table
 console = Console()
 
 chance_of_success = [
-    0.5, 0.6, 0.7
+    0.5, 0.55, 0.55*1.1
 ]
 
 task_count = 100
@@ -50,4 +50,9 @@ for chance in chance_of_success:
             "●" * int(round(count)),
         )
     console.print(table)
+
+    total_chains = sum(avg_lengths.values())
+    weighted_sum = sum(length * count for length, count in avg_lengths.items())
+    avg_chain = weighted_sum / total_chains if total_chains else 0
+    console.print(f"  Average chain length: [bold green]{avg_chain:.2f}[/bold green]")
     console.print()
