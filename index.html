@@ -48,6 +48,10 @@
 			opacity: 0 !important;
 			pointer-events: none;
 		}
+
+		.highlight {
+			color: #B87333 !important;
+		}
 	</style>
 
 </head>
@@ -92,8 +96,8 @@
 			</section> -->
 
 			<section data-auto-animate>
-				<h1 data-id="h1">Powering up <s>Django</s> software development with <s>Claude Code</s></h1>
-			    <h1>LLMs</h1>				
+				<h1 data-id="h1">Powering up <s>Django</s> <span class="highlight">software</span> development with <s>Claude Code</s></h1>
+			    <h1 class="highlight">LLMs</h1>				
 			</section>
 
 			<section>
@@ -109,18 +113,13 @@
 				<h2>AI Fatigue</h2>
 				<ul>
 					<li class="fragment">Deluge of new tools and techniques</li>
-					<li class="fragment">"Influencers" with epic results and fancy tools</li>
+					<li class="fragment">"Influencers" with epic results, big promises and fancy tools</li>
 					<li class="fragment">Feeling behind is normal</li>
-					<li class="fragment">But they often underperform
-						<!-- <ul>
-							<li class="fragment">"Misunderstand" what you need</li>
-							<li class="fragment">Produce filthy code full of repitition</li>
-							<li class="fragment">Introduce weird bugs + security issues</li>
-							<li class="fragment">Suck at testing</li>
-						</ul> -->
-					</li>
+					<!-- <li class="fragment">Want to use the latest/greatest stuff</li>
+					<li class="fragment">Not clear how to do it well</li> -->
+					<li class="fragment">Best practice is not well-defined</li>
 					<!-- <li class="fragment">Also, they rock</li> -->
-					<li class="fragment">A structured approach would be helpful</li>
+					<!-- <li class="fragment">A structured approach would be helpful</li> -->
 				</ul>
 			</section>
 
@@ -239,7 +238,7 @@
 			
 
 			<section data-auto-animate>
-				<h2>Lifetime cost</h2>
+				<h2>Maintainability</h2>
 				<ul>
 					<li class="fragment" data-id="a">Greenfield 💸💸</li>
 					<li class="fragment" data-id="b">Brownfield 💸💸💸💸💸</li>
@@ -247,7 +246,7 @@
 			</section>
 
 			<section data-auto-animate>
-				<h2>Lifetime cost</h2>
+				<h2>Maintainability</h2>
 				<ul>
 					<li data-id="a">Greenfield with LLM 💸</li>
 					<li data-id="b">Brownfield 💸💸💸💸💸<span class="fragment">💸💸💸💸💸</span> </li>
@@ -295,11 +294,7 @@
 				
 			</section>
 
-			<section>
-				<h2>Concrete implementations</h2>
-				<img src="images/freedom_ls_concrete.drawio.svg" height="450"/>
-			</section>
-
+			
 			
 
 
@@ -316,7 +311,13 @@
 			</section>
 
 			<section>
-				<h2>Quality targets</h2>
+				<h2>1. Trust and maintainability targets</h2>
+
+				<img src="images/freedom_ls_concrete.drawio.svg"/>
+			</section>
+
+			<section>
+				<h2>1. Trust and maintainability targets</h2>
 				<ul>
 					<li class="fragment">FLS needs to be easy to extend => Well structured, clear</li>
 					<li class="fragment">Changes to FLS effect all concrete implementations => bugs have a blast radius</li>
@@ -336,7 +337,7 @@
 			</section>
 			
 			<section>
-				<h2>Getting small things right</h2>
+				<h2>2. Getting small things right</h2>
 				<ul>
 					<li class="fragment">Use better models</li>
 					<li class="fragment">Scaffolding => more likely to be correct on first try</li>
@@ -359,7 +360,7 @@
 			</section> -->
 
 			<section>
-				<h2>Get small things right</h2>
+				<h2>2. Get small things right</h2>
 				<h4>Perfectly normal guardrails</h4>
 
 				<ul>
@@ -372,7 +373,7 @@
 			</section>
 
 			<section>
-				<h2>Get small things right</h2>
+				<h2>2. Get small things right</h2>
 				
 				<h4>Claude.md, Agents.md, etc.md</h4>
 				
@@ -391,7 +392,7 @@
 
 
 			<section>
-				<h2>Get small things right</h2>
+				<h2>2. Get small things right</h2>
 				<h4>Work interactively</h4>
 
 				<ul>
@@ -420,6 +421,22 @@
 				</p>
 				<img data-id="a" src="images/diminishing returns 2.drawio.svg"/>
 			</section>
+
+			<section data-auto-animate="">
+				<h2>Chasing diminishing returns</h2>
+				<p>
+					Small improvement chance of success on small task <br/>⇒ Exponential improvement in multi-step tasks
+				</p>
+				<img data-id="a" src="images/diminishing returns 3.drawio.svg"/>
+			</section>
+
+			<section data-auto-animate="">
+				<h2>Chasing diminishing returns</h2>
+				<p>
+					Small improvement chance of success on small task <br/>⇒ Exponential improvement in multi-step tasks
+				</p>
+				<img data-id="a" src="images/diminishing returns 4.drawio.svg"/>
+			</section>
 <!-- 
 			<section>
 				<h2>It's problems all the way down</h2>
@@ -447,7 +464,7 @@
 			</section> -->
 
 			<section data-auto-animate>
-				<h2>Get big things right</h2>
+				<h2>3. Get big things right</h2>
 				<ol>
 					<li class="fragment">Figure out what the big thing is</li>
 					<li class="fragment">Break the big thing into small things</li>
@@ -587,7 +604,7 @@
 			</section>
 
 			<section class="top-aligned" data-background="images/chaotic.png" data-auto-animate="">
-				<h2>Clean code still matters</h2>
+				<h2>Technical debt still matters</h2>
 				<!-- <img src="images/chaotic.png" alt="" height="350"> -->
 			</section>
 
